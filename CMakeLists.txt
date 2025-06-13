@@ -18,7 +18,6 @@ message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
 project(IFCPP)
 message(STATUS "------------------------------------------------------------------------")
-option(BUILD_CONSOLE_APPLICATION "Build an example CLI application" ON)
 IF(NOT WIN32)
     IF("${CMAKE_BUILD_TYPE}" MATCHES "Debug")
         IF(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
